@@ -1,12 +1,12 @@
 # minitest-osx
 
-A `minitest` reporter for the Mac OS X notification center.
+A `minitest` reporter for the Mac OS X Notification Center.
 
 ## Installation
 
 Add the following line to your `Gemfile`:
 
-    gem "minitest/osx"
+    gem "minitest-osx"
 
 And execute:
 
@@ -22,7 +22,7 @@ Simply add `require "minitest/osx"` after `require "minitest/autorun"`.
 
 ```ruby
 require "minitest/autorun"
-require "minitest/nc"
+require "minitest/osx"
 
 describe "my amazing tests" do
   50.times do |i|
