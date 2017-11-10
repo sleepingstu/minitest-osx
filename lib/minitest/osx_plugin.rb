@@ -10,6 +10,8 @@ module Minitest
 
     cattr_accessor :notifier_options
 
+    @@notifier_options = {}
+
     def report
       super
 
