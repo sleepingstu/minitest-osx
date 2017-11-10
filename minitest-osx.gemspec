@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "minitest-osx"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Tom Bell"]
   spec.email         = ["tomb@tomb.io"]
   spec.summary       = %q{A minitest reporter for the Mac OS X notification center}
