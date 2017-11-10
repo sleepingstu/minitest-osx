@@ -7,6 +7,11 @@ module Minitest
   end
 
   class OsxNotificationReporter < StatisticsReporter
+
+    cattr_accessor :notifier_options
+
+    @@notifier_options = {}
+
     def report
       super
 
@@ -14,7 +19,7 @@ module Minitest
 
       title = (passed? ? "Successful \u{1f497}" : "Failed \u{1f4a9}")
 
-      TerminalNotifier.notify(text, :title => 'Minitest', :subtitle => title)
+      TerminalNotifier.notify(text, self.notifier_options.merge({:title => 'Minitest', :subtitle => title}) )
     end
   end
 end
