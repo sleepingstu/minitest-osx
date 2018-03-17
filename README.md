@@ -1,6 +1,6 @@
 # minitest-osx
 
-A `minitest` reporter for the Mac OS X Notification Center.
+A `minitest` reporter for the macOS Notification Center.
 
 ## Installation
 
